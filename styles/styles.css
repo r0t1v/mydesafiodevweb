@@ -5,12 +5,12 @@
 	padding: 0;
 }
 body{
+	font-family: Dosis;
 	background-color: #2f3640;
 }
 /*------------------------------------index----------------------------------------*/
 .initindex{
 	width: 60%;
-	font-family: Dosis;
 	color: white;
 	background-color: #353b48;
 	box-shadow: 0px 10px #718093;
@@ -30,3 +30,93 @@ body{
 	font-size: 24px;
 }
 /*------------------------------------index----------------------------------------*/
+/*------------------------------------login----------------------------------------*/
+.formlogin{
+	width: 35%;
+	margin: 20px auto;
+}
+.formlogin a{
+	color: white;
+	font-size: 28px;
+}
+.formlogin a:hover{
+	color: #718093;
+}
+.formlogin label{
+	color: white;
+	font-size: 26px;
+	margin: 5px;
+}
+.formlogin button{
+	color: white;
+	font-size: 22px;
+	padding: 15px 50px;
+	margin: 20px;
+}
+/*------------------------------------login----------------------------------------*/
+/*------------------------------------conta----------------------------------------*/
+.minhaconta{
+	width: 60%;
+	margin: 20px auto;
+}
+.minhaconta .initconta a{
+	color: white;
+	font-size: 28px;
+}
+.minhaconta .initconta a:hover{
+	color: #718093;
+}
+.minhaconta .initconta p{
+	color: white;
+	font-size: 56px;
+}
+.minhaconta .initconta span{
+	color: #686de0;
+}
+.minhaconta h1{
+	color: #2f3640;
+	background-color: white;
+	width: 80%;
+	padding: 15px;
+	border-radius: 3rem;
+}
+.minhaconta .lancamentos table{
+	width: 80%;
+	background-color: white;
+	border-radius: 1rem;
+	border-bottom: hidden;
+	margin: 30px;
+}
+.minhaconta .lancamentos .table .saida{
+	color: #e84118;
+}
+.minhaconta .lancamentos .table .entrada{
+	color: #4cd137;
+}
+.minhaconta .lancamentos button{
+	padding: 1px 6px;
+	font-size: 22px;
+}
+.minhaconta a{
+	padding: 8px 25px;
+	font-size: 36px;
+}
+/*------------------------------------conta----------------------------------------*/
+/*------------------------------------lancar----------------------------------------*/
+.formlancar{
+	width: 40%;
+	margin: 20px auto;
+	color: white;
+	font-size: 22px;
+}
+.formlancar .form-check{
+	margin: 10px;
+}
+.formlancar label{
+	padding: 5px;
+}
+.formlancar button{
+	font-size: 26px;
+	padding: 20px 50px;
+}
+/*------------------------------------lancar----------------------------------------*/

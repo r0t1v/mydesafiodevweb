@@ -24,7 +24,7 @@ require (__DIR__.'/scripts/connect.php');
 					<?php
 		      	 	if(isset($_SESSION['islogged'])){
 				      	echo'<div class="col-sm-5">
-					    <a class="btn btn-primary" href="#" role="button">
+					    <a class="btn btn-primary" href="src/minhaconta.php" role="button">
 					     	<i class="bi bi-file-earmark-bar-graph-fill"></i> Meus Lançamentos
 					     </a>
 					</div>
@@ -35,7 +35,7 @@ require (__DIR__.'/scripts/connect.php');
 					</div>';
 				    }else{
 				      echo'<div class="col-sm-5">
-					    <a class="btn btn-primary" href="scripts/login.php" role="button">
+					    <a class="btn btn-primary" href="src/login.php" role="button">
 					     	<i class="bi bi-door-open-fill"></i> Logar com conta
 					     </a>
 					</div>
