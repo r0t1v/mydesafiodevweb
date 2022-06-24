@@ -19,11 +19,30 @@ require (__DIR__.'/scripts/connect.php');
 				<i class="bi bi-clipboard-data"></i> Sistema de Lançamentos</h1><small>v.0.1.2(beta)</small>
 		</div>
 		<div class="bodyindex" align="center">
+			<?php
+			if (isset($_SESSION['msgi'])) {
+					echo $_SESSION['msgi'];
+					unset($_SESSION['msgi']);
+				}
+			?>
 			<div class="container">
 				<div class="row" align="center">
 					<?php
 		      	 	if(isset($_SESSION['islogged'])){
-				      	echo'<div class="col-sm-5">
+		      	 		$conta=$_SESSION['conta'];
+		      	 		$cont=0;
+		      	 		$indexcont="SELECT lancamento FROM lancamentos WHERE conta_lanca='$conta'";
+						$indexcontquery = mysqli_query($conn,$indexcont);
+						$result= mysqli_num_rows($indexcontquery);
+						while ($indexcontquery->fetch_assoc()){
+							$cont++;
+						}
+				      	echo'
+				      		<div id="dash">
+					      		<h1>'.$cont.'</h1>
+					      		<h2>Seus lançamentos no sistema</h2>
+				      		</div>
+				      	<div class="col-sm-5">
 					    <a class="btn btn-primary" href="src/minhaconta.php" role="button">
 					     	<i class="bi bi-file-earmark-bar-graph-fill"></i> Meus Lançamentos
 					     </a>
@@ -40,7 +59,7 @@ require (__DIR__.'/scripts/connect.php');
 					     </a>
 					</div>
 					<div class="col-sm-5">
-					    <a class="btn btn-outline-primary" href="#" role="button">
+					    <a class="btn btn-outline-primary" href="src/criarconta.php" role="button">
 					    	<i class="bi bi-plus-circle-dotted"></i> Criar uma conta
 					    </a>
 					</div>';

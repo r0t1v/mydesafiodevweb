@@ -29,6 +29,14 @@ body{
 	padding: 25px;
 	font-size: 24px;
 }
+#dash{
+	color: black;
+	background-color: white;
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 3rem;
+	box-shadow: 0px 10px #718093;
+}
 /*------------------------------------index----------------------------------------*/
 /*------------------------------------login----------------------------------------*/
 .formlogin{
@@ -120,3 +128,29 @@ body{
 	padding: 20px 50px;
 }
 /*------------------------------------lancar----------------------------------------*/
+/*------------------------------------removerlanca----------------------------------*/
+.minhaconta .lancamentos .inputlanca{
+	width: 70%;
+	color: white;
+	margin: 10px;
+}
+.minhaconta .lancamentos .inputlanca label{
+	font-size: 24px;
+	padding: 5px;
+}
+/*------------------------------------removerlanca----------------------------------*/
+/*------------------------------------criarconta----------------------------------*/
+.criarcontaform{
+	width: 60%;
+}
+.criarcontaform label{
+	color: white;
+	padding: 5px;
+	font-size: 32px;
+}
+.criarcontaform button{
+	margin: 20px;
+	font-size: 32px;
+	padding: 5px 30px;
+}
+/*------------------------------------criarconta----------------------------------*/

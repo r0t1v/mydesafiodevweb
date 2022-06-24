@@ -9,3 +9,5 @@ $conta=$_SESSION['conta'];
 
 $lancarquery = "INSERT INTO lancamentos(conta_lanca,lancamento,valor,tipo) VALUES ('$conta','$lanca','$valor','$tipo')";
 $lancar = mysqli_query($conn, $lancarquery);
+
+header("Location: ../src/minhaconta.php");
