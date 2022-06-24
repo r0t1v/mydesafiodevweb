@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #2f3640;
+}
+/*------------------------------------index----------------------------------------*/
+.initindex{
+	width: 60%;
+	font-family: Dosis;
+	color: white;
+	background-color: #353b48;
+	box-shadow: 0px 10px #718093;
+	padding: 10px;
+	margin: 30px auto;
+	border-radius: 3rem;
+}
+.bodyindex{
+	width: 60%;
+	margin: 60px auto;
+}
+.bodyindex .container .row .col-sm-5{
+	margin: 0px auto;
+}
+.bodyindex .container .row .col-sm-5 a{
+	padding: 25px;
+	font-size: 24px;
+}
+/*------------------------------------index----------------------------------------*/
